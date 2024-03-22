@@ -12,8 +12,8 @@ pip install -e .
 For foundation models with fewer than (including) 2.5B parameters, we can train the model using Zero Stage 2:
 
 ```
-export NODES=10
-export GPUS_PER_NODE=4
+export NODES=2
+export GPUS_PER_NODE=2
 # export MASTER_ADDR=x3006c0s13b1n0.hsn.cm.polaris.alcf.anl.gov
 export MASTER_ADDR=$SLURM_LAUNCH_NODE_IPADDR # obtain the Master address.
 export LR=1e-4
